@@ -13,9 +13,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: sans-serif;
 }
 .main-box {
-    width: 380px; /* 全体の幅を少しゆったりさせたよ！ */
+    width: 90%; /* 少し柔軟な幅に設定 */
+    max-width: 400px; /* 全体の最大幅 */
     margin: 0 auto;
     text-align: center;
 }
@@ -25,30 +27,30 @@ body {
 }
 .logo-svg {
     width: 100%;
-    max-width: 360px; /* ロゴを一回り大きくしたよ！ */
+    /* ここを修正！ひと回り大きく（420px）したよ！ */
+    max-width: 420px; 
     height: auto;
     margin: 0 auto 30px auto;
     display: block;
     animation: hueRotateFull 20s infinite linear;
 }
 .concept {
-    font-family: sans-serif;
     font-weight: 400;
-    font-size: 0.85rem;
-    color: #000000; /* 黒一色に変更！ */
+    font-size: 1rem; /* 少しだけ大きく読みやすく */
+    color: #000000;
     margin: 0 0 35px 0;
     letter-spacing: 0.04em;
 }
 .sub-group {
-    width: 280px;
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
     text-align: left;
 }
 .soon {
-    font-family: sans-serif;
     font-weight: 400;
-    font-size: 0.75rem;
-    color: #000000; /* 黒一色に変更！ */
+    font-size: 0.8rem;
+    color: #000000;
     letter-spacing: 0.04em;
     text-align: right;
     margin-bottom: 25px;
@@ -57,19 +59,18 @@ body {
     text-align: center;
 }
 .contact {
-    font-family: sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     display: inline-block;
 }
 .contact a {
-    color: #000000; /* 黒一色に変更！ */
+    color: #000000;
     text-decoration: none;
-    border-bottom: 1px solid #000000; /* 下線も黒に！ */
+    border-bottom: 1px solid #000000;
     padding-bottom: 1px;
 }
 .contact a:hover {
-    opacity: 0.6; /* ホバーした時に少し薄くなるおしゃれ仕様！ */
+    opacity: 0.6;
 }
 </style>
 </head>
