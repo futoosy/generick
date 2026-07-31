@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* 全体のベースフォントをFuturaに設定！ */
     font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif;
 }
 .main-box {
@@ -24,6 +23,7 @@ body {
 }
 @keyframes hueRotateFull {
     0% { filter: hue-rotate(0deg); }
+    50% { filter: hue-rotate(180deg); }
     100% { filter: hue-rotate(360deg); }
 }
 .logo-svg {
