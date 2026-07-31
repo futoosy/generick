@@ -1,113 +1,205 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H360</title>
-    <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/yiy7lxu.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .main-box {
-            width: 320px;
-            margin: 0 auto;
-            text-align: center;
-        }
+<title>H360</title>
 
-        /* 20秒かけて色相環をなめらかに一周させるアニメーション */
-        @keyframes hueRotateFull {
-            0%   { filter: hue-rotate(0deg); }     /* 赤 (0度) */
-            25%  { filter: hue-rotate(90deg); }    /* 黄 (90度) */
-            50%  { filter: hue-rotate(180deg); }   /* 緑 (180度) */
-            75%  { filter: hue-rotate(270deg); }   /* 青 (270度) */
-            100% { filter: hue-rotate(360deg); }   /* 紫〜赤に戻る (360度) */
-        }
+<!-- Adobe Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/yiy7lxu.css">
 
-        h1 {
-            /* コンデンスを外した通常のFutura PTの極太斜体指定！ */
-            font-family: "futura-pt", sans-serif;
-            font-weight: 800;
-            font-style: oblique;
-            font-size: 4.5rem; /* 大迫力の二回り大きいサイズ */
-            color: #ff0000; /* ベースの赤 */
-            margin: 0 0 25px 0;
-            line-height: 1;
-            letter-spacing: -0.03em;
-            /* アニメーション適用（20秒で全色ループ） */
-            animation: hueRotateFull 20s infinite linear;
-        }
+<style>
 
-        .concept {
-            font-family: "futura-pt", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 0.85rem;
-            color: #38b6ff;
-            margin: 0 0 35px 0;
-            letter-spacing: 0.04em;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        .sub-group {
-            width: 240px;
-            margin: 0 auto;
-            text-align: left;
-        }
 
-        .soon {
-            font-family: "futura-pt", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 0.75rem;
-            color: #38b6ff;
-            letter-spacing: 0.04em;
-            text-align: right;
-            margin-bottom: 25px;
-        }
+.main-box {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-        .contact-wrap {
-            text-align: center;
-        }
 
-        .contact {
-            font-family: "futura-pt", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 0.8rem;
-            display: inline-block;
-        }
+/* 色相環を一周 */
+@keyframes hueRotateFull {
 
-        .contact a {
-            color: #38b6ff;
-            text-decoration: none;
-            border-bottom: 1px solid #38b6ff;
-            padding-bottom: 1px;
-        }
-    </style>
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+
+/* H360 ロゴ */
+h1 {
+
+    /* Futura PT ExtraBold */
+    font-family: "futura-pt", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+
+    font-size: 4.5rem;
+
+    color: #ff0000;
+
+    margin: 0 0 25px 0;
+
+    line-height: 1;
+
+    /* Futuraは詰めすぎない */
+    letter-spacing: -0.01em;
+
+
+    /*
+      H360 = 色相環360度
+      ロゴ自体が色を巡る
+    */
+    animation: hueRotateFull 20s infinite linear;
+
+}
+
+
+
+.concept {
+
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 0.85rem;
+
+    color: #38b6ff;
+
+    margin: 0 0 35px 0;
+
+    letter-spacing: 0.04em;
+
+}
+
+
+
+.sub-group {
+
+    width: 240px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+}
+
+
+
+.soon {
+
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 0.75rem;
+
+    color: #38b6ff;
+
+    letter-spacing: 0.04em;
+
+    text-align: right;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.contact-wrap {
+
+    text-align: center;
+
+}
+
+
+
+.contact {
+
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 0.8rem;
+
+    display: inline-block;
+
+}
+
+
+
+.contact a {
+
+    color: #38b6ff;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #38b6ff;
+
+    padding-bottom: 1px;
+
+}
+
+</style>
+
 </head>
+
+
 <body>
 
-    <div class="main-box">
-        <h1>H360</h1>
-        <div class="concept">H360 is a little movie/ novelty/ clothing /board</div>
-        
-        <div class="sub-group">
-            <div class="soon">...soon</div>
-            <div class="contact-wrap">
-                <div class="contact">
-                    <a href="mailto:futoosy@gmail.com">contact</a>
-                </div>
-            </div>
-        </div>
+
+<div class="main-box">
+
+
+    <h1>H360</h1>
+
+
+    <div class="concept">
+        H360 is a little movie / novelty / clothing / board
     </div>
+
+
+    <div class="sub-group">
+
+        <div class="soon">
+            ...soon
+        </div>
+
+
+        <div class="contact-wrap">
+
+            <div class="contact">
+
+                <a href="mailto:futoosy@gmail.com">
+                    contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
 
 </body>
 </html>
