@@ -17,7 +17,7 @@ body {
 }
 .main-box {
     width: 90%;
-    /* テキストの長さに合わせた絶妙なコンテナ幅✨ */
+    /* テキストの長さに合わせつつ、soonの右端が綺麗に収まる幅✨ */
     max-width: 580px;
     margin: 0 auto;
     display: flex;
@@ -35,12 +35,12 @@ body {
     100% { fill: #ff0000; }
 }
 
-/* ロゴのサイズをしっかり存在感が出る大きさに調整！ */
+/* ロゴのサイズ感をキープしつつ、下の文言との距離をさらにグッと近づけたよ！ */
 .logo-svg {
     width: 100%;
     max-width: 460px; 
     height: auto;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 12px auto;
     display: block;
 }
 
@@ -52,7 +52,7 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     color: #111111;
-    margin: 0 0 12px 0;
+    margin: 0 0 16px 0;
     letter-spacing: normal;
     text-align: center;
     width: 100%;
@@ -65,24 +65,16 @@ body {
 
 .sub-group {
     width: 100%;
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 2px;
-}
-
-.soon {
-    font-weight: 500;
-    font-size: 0.85rem;
-    color: #666666;
-    letter-spacing: 0.08em;
-    /* boardの右端といい感じに揃うように配置！ */
-    text-align: right;
 }
 
 .contact {
     font-weight: 500;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 .contact a {
@@ -95,6 +87,16 @@ body {
 
 .contact a:hover {
     opacity: 0.5;
+}
+
+.soon {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #666666;
+    letter-spacing: 0.08em;
+    /* absoluteを使って、上にある board の右端にピタッと合わせる！✨ */
+    position: absolute;
+    right: 0;
 }
 </style>
 </head>
