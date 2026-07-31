@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 .main-box {
-    width: 320px;
+    width: 380px; /* 全体の幅を少しゆったりさせたよ！ */
     margin: 0 auto;
     text-align: center;
 }
@@ -25,22 +25,22 @@ body {
 }
 .logo-svg {
     width: 100%;
-    max-width: 280px; /* お好みに合わせて調整してね！ */
+    max-width: 360px; /* ロゴを一回り大きくしたよ！ */
     height: auto;
-    margin: 0 0 25px 0;
-    /* 虹色にグリグリ色が変わるアニメーション！ */
+    margin: 0 auto 30px auto;
+    display: block;
     animation: hueRotateFull 20s infinite linear;
 }
 .concept {
     font-family: sans-serif;
     font-weight: 400;
     font-size: 0.85rem;
-    color: #38b6ff;
+    color: #000000; /* 黒一色に変更！ */
     margin: 0 0 35px 0;
     letter-spacing: 0.04em;
 }
 .sub-group {
-    width: 240px;
+    width: 280px;
     margin: 0 auto;
     text-align: left;
 }
@@ -48,7 +48,7 @@ body {
     font-family: sans-serif;
     font-weight: 400;
     font-size: 0.75rem;
-    color: #38b6ff;
+    color: #000000; /* 黒一色に変更！ */
     letter-spacing: 0.04em;
     text-align: right;
     margin-bottom: 25px;
@@ -63,16 +63,19 @@ body {
     display: inline-block;
 }
 .contact a {
-    color: #38b6ff;
+    color: #000000; /* 黒一色に変更！ */
     text-decoration: none;
-    border-bottom: 1px solid #38b6ff;
+    border-bottom: 1px solid #000000; /* 下線も黒に！ */
     padding-bottom: 1px;
+}
+.contact a:hover {
+    opacity: 0.6; /* ホバーした時に少し薄くなるおしゃれ仕様！ */
 }
 </style>
 </head>
 <body>
 <div class="main-box">
-    <!-- SVGを直接埋め込み！ -->
+    <!-- SVGを直接埋め込み -->
     <svg class="logo-svg" viewBox="0 0 3508 2481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
         <g fill="#ff0000">
             <path d="M1492.15,1134.875l-8.826,71.869l-44.761,0l8.826,-71.869l-76.282,0l-25.848,210.249l76.282,0l9.141,-76.597l45.076,0l-9.456,76.597l76.282,0l25.848,-210.249l-76.282,0Z"/>
