@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>H360</title>
-<link rel="stylesheet" href="https://use.typekit.net/yiy7lxu.css">
 <style>
 body {
     margin: 0;
@@ -24,22 +23,17 @@ body {
     0% { filter: hue-rotate(0deg); }
     100% { filter: hue-rotate(360deg); }
 }
-h1 {
-    /* 自然なプロポーションのFutura PT */
-    font-family: futura-pt, sans-serif;
-    font-weight: 900; /* 最も太いウェイトを指定してしっかりしたボールド感に！ */
-    font-style: italic;
-    font-size: 4.5rem;
-    color: #ff0000;
+.logo-svg {
+    width: 100%;
+    max-width: 280px; /* お好みに合わせて調整してね！ */
+    height: auto;
     margin: 0 0 25px 0;
-    line-height: 1;
-    letter-spacing: -0.02em;
+    /* 虹色にグリグリ色が変わるアニメーション！ */
     animation: hueRotateFull 20s infinite linear;
 }
 .concept {
-    font-family: futura-pt, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 0.85rem;
     color: #38b6ff;
     margin: 0 0 35px 0;
@@ -51,9 +45,8 @@ h1 {
     text-align: left;
 }
 .soon {
-    font-family: futura-pt, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 0.75rem;
     color: #38b6ff;
     letter-spacing: 0.04em;
@@ -64,9 +57,8 @@ h1 {
     text-align: center;
 }
 .contact {
-    font-family: futura-pt, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 0.8rem;
     display: inline-block;
 }
@@ -80,7 +72,15 @@ h1 {
 </head>
 <body>
 <div class="main-box">
-    <h1>H360</h1>
+    <!-- SVGを直接埋め込み！ -->
+    <svg class="logo-svg" viewBox="0 0 3508 2481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <g fill="#ff0000">
+            <path d="M1492.15,1134.875l-8.826,71.869l-44.761,0l8.826,-71.869l-76.282,0l-25.848,210.249l76.282,0l9.141,-76.597l45.076,0l-9.456,76.597l76.282,0l25.848,-210.249l-76.282,0Z"/>
+            <path d="M1573.791,1313.603c16.706,23.641 47.598,36.88 85.739,36.88c56.424,0 94.565,-27.739 94.565,-68.717c0,-23.326 -13.554,-40.663 -34.359,-44.445l0,-3.152c21.75,-3.152 36.25,-19.859 36.25,-41.924c0,-36.25 -36.25,-62.413 -86.054,-62.413c-23.956,0 -43.815,5.359 -60.837,17.022c-8.511,5.674 -15.446,12.924 -21.119,21.75c-5.989,9.772 -7.88,15.761 -10.402,31.206l73.13,0c1.261,-11.348 7.25,-17.337 16.391,-17.337c8.511,0 15.446,6.935 15.446,16.076c0,9.772 -7.565,16.706 -18.283,16.706c-2.207,0 -3.467,-0.315 -6.304,-0.946l-5.359,43.185c3.152,-0.63 5.359,-0.63 7.25,-0.63c11.663,0 20.174,8.196 20.174,18.913c0,11.978 -10.087,21.435 -22.696,21.435c-11.663,0 -19.859,-7.88 -19.859,-19.859c0,-1.261 0,-2.837 0.315,-5.043l-77.543,0c2.522,20.804 5.043,29 13.554,41.293Z"/>
+            <path d="M1852.442,1134.875l-48.858,42.554c-8.511,7.25 -16.076,14.5 -22.696,21.75c-16.391,18.598 -25.532,41.609 -25.532,64.619c0,50.435 40.663,86.684 97.402,86.684c57.685,0 99.923,-36.88 99.923,-87c0,-37.826 -25.532,-65.88 -60.521,-65.88c-5.043,0 -7.565,0.315 -13.87,2.207l-0.946,-4.098c2.522,-0.946 4.413,-1.576 6.304,-2.522c3.152,-1.576 6.62,-3.467 9.456,-5.674c0.63,-0.315 3.152,-2.522 7.565,-5.989l58.63,-46.652l-106.858,0Zm0.63,156.347c-14.185,0 -23.956,-9.772 -23.956,-24.272c0,-14.815 11.978,-27.109 26.163,-27.109c13.87,0 23.641,9.772 23.641,23.641c0,16.076 -11.033,27.739 -25.848,27.739Z"/>
+            <path d="M2063.006,1129.832c-59.891,0 -104.021,49.804 -104.021,117.576c0,60.521 40.032,103.076 97.087,103.076c60.521,0 106.543,-51.065 106.543,-117.891c0,-58.945 -42.554,-102.76 -99.608,-102.76Zm-7.25,157.608c-13.239,0 -21.119,-13.87 -21.119,-36.25c0,-30.261 14.5,-57.369 30.576,-57.369c12.924,0 21.75,13.239 21.75,33.098c0,33.728 -13.87,60.521 -31.206,60.521Z"/>
+        </g>
+    </svg>
     <div class="concept">H360 is a little movie / novelty / clothing / board</div>
     <div class="sub-group">
         <div class="soon">...soon</div>
