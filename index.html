@@ -17,10 +17,9 @@ body {
 }
 .main-box {
     width: 90%;
-    max-width: 650px;
+    /* テキストの長さに合わせた絶妙なコンテナ幅✨ */
+    max-width: 580px;
     margin: 0 auto;
-    text-align: center;
-    /* 全体をひとつのまとまりとして美しく配置するよ！ */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,11 +35,12 @@ body {
     100% { fill: #ff0000; }
 }
 
+/* ロゴのサイズをしっかり存在感が出る大きさに調整！ */
 .logo-svg {
     width: 100%;
-    max-width: 320px; 
+    max-width: 460px; 
     height: auto;
-    margin: 0 auto 28px auto;
+    margin: 0 auto 32px auto;
     display: block;
 }
 
@@ -50,11 +50,12 @@ body {
 
 .concept {
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: #111111;
-    margin: 0 0 16px 0;
+    margin: 0 0 12px 0;
     letter-spacing: normal;
-    line-height: 1.5;
+    text-align: center;
+    width: 100%;
 }
 
 /* 「H360」の文字間調整✨ */
@@ -65,9 +66,9 @@ body {
 .sub-group {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    padding: 0 2px;
 }
 
 .soon {
@@ -75,8 +76,8 @@ body {
     font-size: 0.85rem;
     color: #666666;
     letter-spacing: 0.08em;
-    /* センターできれいに揃える！ */
-    text-align: center;
+    /* boardの右端といい感じに揃うように配置！ */
+    text-align: right;
 }
 
 .contact {
@@ -111,10 +112,10 @@ body {
     <div class="concept"><span class="brand-name">H360</span> is a little movie / novelty / clothing / board</div>
     
     <div class="sub-group">
-        <div class="soon">...soon</div>
         <div class="contact">
             <a href="mailto:futoosy@gmail.com">contact</a>
         </div>
+        <div class="soon">...soon</div>
     </div>
 </div>
 </body>
