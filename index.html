@@ -21,25 +21,37 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-@keyframes hueRotateFull {
-    0% { filter: hue-rotate(0deg); }
-    50% { filter: hue-rotate(180deg); }
-    100% { filter: hue-rotate(360deg); }
+
+/* 綺麗な虹色（赤→橙→黄→緑→青→紫→赤）へのカラーアニメーション */
+@keyframes rainbowFill {
+    0%   { fill: #ff0000; } /* 赤 */
+    20%  { fill: #ff7700; } /* オレンジ */
+    40%  { fill: #ffee00; } /* 黄色 */
+    60%  { fill: #00cc44; } /* 緑 */
+    80%  { fill: #0066ff; } /* 青 */
+    90%  { fill: #9900ff; } /* 紫 */
+    100% { fill: #ff0000; } /* 赤に戻る */
 }
+
 .logo-svg {
     width: 100%;
     max-width: 800px; 
     height: auto;
     margin: 0 auto 35px auto;
     display: block;
-    animation: hueRotateFull 20s infinite linear;
 }
+
+.logo-svg g {
+    animation: rainbowFill 20s infinite linear;
+}
+
 .concept {
     font-weight: 500;
     font-size: 1.1rem;
     color: #000000;
     margin: 0 0 35px 0;
-    letter-spacing: 0.04em;
+    /* 文字間をキュッと詰めたよ！ */
+    letter-spacing: -0.02em;
 }
 .sub-group {
     width: 100%;
