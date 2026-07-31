@@ -13,9 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* すべてのテキストのフォントを Tisa Sans Pro Thin に変更！✨ */
     font-family: "Tisa Sans Pro", "Tisa Sans Pro Thin", "Futura", sans-serif;
-    font-weight: 100; /* Thinのウェイトを確実に適用するよ！ */
+    font-weight: 100;
 }
 .main-box {
     width: 90%;
@@ -24,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 @keyframes rainbowFill {
@@ -49,7 +49,7 @@ body {
 }
 
 .content-width {
-    width: max-content;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -61,7 +61,9 @@ body {
     margin: 0 0 21px 0; 
     letter-spacing: normal;
     text-align: center;
-    white-space: nowrap;
+    /* スマホでは折り返しを許可し、ある程度広い画面では1行にする設定！✨ */
+    white-space: normal;
+    word-break: break-word;
 }
 
 .brand-name {
@@ -110,6 +112,16 @@ body {
     color: #666666;
     letter-spacing: 0.08em;
     text-align: right;
+}
+
+/* スマホなど画面が狭いときの調整用メディアクエリだよ！ */
+@media screen and (max-width: 600px) {
+    .concept {
+        font-size: 1.1rem; /* スマホで少しだけ文字をスッキリさせる調整 */
+    }
+    .contact, .soon, .contact-spacer {
+        font-size: 0.95rem;
+    }
 }
 </style>
 </head>
