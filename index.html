@@ -22,15 +22,14 @@ body {
     text-align: center;
 }
 
-/* 綺麗な虹色（赤→橙→黄→緑→青→紫→赤）へのカラーアニメーション */
 @keyframes rainbowFill {
-    0%   { fill: #ff0000; } /* 赤 */
-    20%  { fill: #ff7700; } /* オレンジ */
-    40%  { fill: #ffee00; } /* 黄色 */
-    60%  { fill: #00cc44; } /* 緑 */
-    80%  { fill: #0066ff; } /* 青 */
-    90%  { fill: #9900ff; } /* 紫 */
-    100% { fill: #ff0000; } /* 赤に戻る */
+    0%   { fill: #ff0000; }
+    20%  { fill: #ff7700; }
+    40%  { fill: #ffee00; }
+    60%  { fill: #00cc44; }
+    80%  { fill: #0066ff; }
+    90%  { fill: #9900ff; }
+    100% { fill: #ff0000; }
 }
 
 .logo-svg {
@@ -50,9 +49,15 @@ body {
     font-size: 1.1rem;
     color: #000000;
     margin: 0 0 35px 0;
-    /* 文字間をキュッと詰めたよ！ */
-    letter-spacing: -0.02em;
+    /* フトシくんこだわりの通常文字間に戻したよ！ */
+    letter-spacing: normal;
 }
+
+/* 「H360」の部分だけ個別に文字間を詰めるクラス✨ */
+.brand-name {
+    letter-spacing: -0.04em;
+}
+
 .sub-group {
     width: 100%;
     max-width: 450px;
@@ -88,7 +93,6 @@ body {
 </head>
 <body>
 <div class="main-box">
-    <!-- SVGを直接埋め込み -->
     <svg class="logo-svg" viewBox="0 0 3508 2481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
         <g fill="#ff0000">
             <path d="M1492.15,1134.875l-8.826,71.869l-44.761,0l8.826,-71.869l-76.282,0l-25.848,210.249l76.282,0l9.141,-76.597l45.076,0l-9.456,76.597l76.282,0l25.848,-210.249l-76.282,0Z"/>
@@ -97,7 +101,7 @@ body {
             <path d="M2063.006,1129.832c-59.891,0 -104.021,49.804 -104.021,117.576c0,60.521 40.032,103.076 97.087,103.076c60.521,0 106.543,-51.065 106.543,-117.891c0,-58.945 -42.554,-102.76 -99.608,-102.76Zm-7.25,157.608c-13.239,0 -21.119,-13.87 -21.119,-36.25c0,-30.261 14.5,-57.369 30.576,-57.369c12.924,0 21.75,13.239 21.75,33.098c0,33.728 -13.87,60.521 -31.206,60.521Z"/>
         </g>
     </svg>
-    <div class="concept">H360 is a little movie / novelty / clothing / board</div>
+    <div class="concept"><span class="brand-name">H360</span> is a little movie / novelty / clothing / board</div>
     <div class="sub-group">
         <div class="soon">...soon</div>
         <div class="contact-wrap">
