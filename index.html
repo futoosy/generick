@@ -23,26 +23,26 @@
             text-align: center;
         }
 
-        /* 20秒かけて色相環をぐるっと一周させるアニメーション */
-        @keyframes hueRotate {
-            0%   { filter: hue-rotate(0deg); }     /* 赤スタート */
-            25%  { filter: hue-rotate(60deg); }    /* 黄 */
-            50%  { filter: hue-rotate(120deg); }   /* 緑 */
-            75%  { filter: hue-rotate(210deg); }   /* 青 */
-            100% { filter: hue-rotate(270deg); }   /* 紫〜一周 */
+        /* 20秒かけて色相環をなめらかに一周させるアニメーション */
+        @keyframes hueRotateFull {
+            0%   { filter: hue-rotate(0deg); }     /* 赤 (0度) */
+            25%  { filter: hue-rotate(90deg); }    /* 黄 (90度) */
+            50%  { filter: hue-rotate(180deg); }   /* 緑 (180度) */
+            75%  { filter: hue-rotate(270deg); }   /* 青 (270度) */
+            100% { filter: hue-rotate(360deg); }   /* 紫〜赤に戻る (360度) */
         }
 
         h1 {
-            font-family: "helvetica-neue-lt-pro-cond", sans-serif;
-            font-weight: 900;
-            font-style: normal;
+            font-family: "futura-pt", sans-serif;
+            font-weight: 800; /* Extrabold */
+            font-style: oblique; /* 斜体 */
             font-size: 3.2rem;
-            color: #ff3838; /* ベースとなる赤 */
+            color: #ff0000; /* ベースの赤 */
             margin: 0 0 25px 0;
             line-height: 1;
             letter-spacing: -0.03em;
-            /* アニメーションを適用（20秒かけてループ） */
-            animation: hueRotate 20s infinite linear;
+            /* アニメーション適用（20秒で全色ループ） */
+            animation: hueRotateFull 20s infinite linear;
         }
 
         .concept {
