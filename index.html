@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENERICK</title>
+    <title>H360</title>
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/yiy7lxu.css">
     <style>
@@ -23,15 +23,26 @@
             text-align: center;
         }
 
+        /* 20秒かけて色相環をぐるっと一周させるアニメーション */
+        @keyframes hueRotate {
+            0%   { filter: hue-rotate(0deg); }     /* 赤スタート */
+            25%  { filter: hue-rotate(60deg); }    /* 黄 */
+            50%  { filter: hue-rotate(120deg); }   /* 緑 */
+            75%  { filter: hue-rotate(210deg); }   /* 青 */
+            100% { filter: hue-rotate(270deg); }   /* 紫〜一周 */
+        }
+
         h1 {
             font-family: "helvetica-neue-lt-pro-cond", sans-serif;
             font-weight: 900;
             font-style: normal;
             font-size: 3.2rem;
-            color: #38b6ff;
-            margin: 0 0 25px 0; /* ←ここを小さくして、下の文字との間隔をグッと縮めました！ */
+            color: #ff3838; /* ベースとなる赤 */
+            margin: 0 0 25px 0;
             line-height: 1;
             letter-spacing: -0.03em;
+            /* アニメーションを適用（20秒かけてループ） */
+            animation: hueRotate 20s infinite linear;
         }
 
         .concept {
@@ -84,8 +95,8 @@
 <body>
 
     <div class="main-box">
-        <h1>GENERICK</h1>
-        <div class="concept">GENERICK is a little movie/ novelty/ clothing /board</div>
+        <h1>H360</h1>
+        <div class="concept">H360 is a little movie/ novelty/ clothing /board</div>
         
         <div class="sub-group">
             <div class="soon">...soon</div>
