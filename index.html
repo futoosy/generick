@@ -17,9 +17,13 @@ body {
 }
 .main-box {
     width: 90%;
-    max-width: 750px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
+    /* 全体をひとつのまとまりとして美しく配置するよ！ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @keyframes rainbowFill {
@@ -34,9 +38,9 @@ body {
 
 .logo-svg {
     width: 100%;
-    max-width: 800px; 
+    max-width: 320px; 
     height: auto;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 28px auto;
     display: block;
 }
 
@@ -46,48 +50,50 @@ body {
 
 .concept {
     font-weight: 500;
-    font-size: 1.1rem;
-    color: #000000;
-    margin: 0 0 35px 0;
-    /* フトシくんこだわりの通常文字間に戻したよ！ */
+    font-size: 1.05rem;
+    color: #111111;
+    margin: 0 0 16px 0;
     letter-spacing: normal;
+    line-height: 1.5;
 }
 
-/* 「H360」の部分だけ個別に文字間を詰めるクラス✨ */
+/* 「H360」の文字間調整✨ */
 .brand-name {
     letter-spacing: -0.04em;
 }
 
 .sub-group {
     width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
+
 .soon {
     font-weight: 500;
-    font-size: 0.9rem;
-    color: #000000;
-    letter-spacing: 0.04em;
-    text-align: right;
-    margin-bottom: 25px;
-}
-.contact-wrap {
+    font-size: 0.85rem;
+    color: #666666;
+    letter-spacing: 0.08em;
+    /* センターできれいに揃える！ */
     text-align: center;
 }
+
 .contact {
     font-weight: 500;
     font-size: 0.95rem;
-    display: inline-block;
 }
+
 .contact a {
-    color: #000000;
+    color: #111111;
     text-decoration: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #111111;
     padding-bottom: 1px;
+    transition: opacity 0.2s;
 }
+
 .contact a:hover {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 </style>
 </head>
@@ -101,13 +107,13 @@ body {
             <path d="M2063.006,1129.832c-59.891,0 -104.021,49.804 -104.021,117.576c0,60.521 40.032,103.076 97.087,103.076c60.521,0 106.543,-51.065 106.543,-117.891c0,-58.945 -42.554,-102.76 -99.608,-102.76Zm-7.25,157.608c-13.239,0 -21.119,-13.87 -21.119,-36.25c0,-30.261 14.5,-57.369 30.576,-57.369c12.924,0 21.75,13.239 21.75,33.098c0,33.728 -13.87,60.521 -31.206,60.521Z"/>
         </g>
     </svg>
+    
     <div class="concept"><span class="brand-name">H360</span> is a little movie / novelty / clothing / board</div>
+    
     <div class="sub-group">
         <div class="soon">...soon</div>
-        <div class="contact-wrap">
-            <div class="contact">
-                <a href="mailto:futoosy@gmail.com">contact</a>
-            </div>
+        <div class="contact">
+            <a href="mailto:futoosy@gmail.com">contact</a>
         </div>
     </div>
 </div>
