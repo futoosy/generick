@@ -13,12 +13,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    /* すべてのテキストで確実にFuturaが優先されるように指定したよ！✨ */
     font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif;
 }
 .main-box {
     width: 90%;
-    /* テキストの長さに合わせつつ、soonの右端が綺麗に収まる幅✨ */
-    max-width: 580px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -35,12 +35,11 @@ body {
     100% { fill: #ff0000; }
 }
 
-/* ロゴのサイズ感をキープしつつ、下の文言との距離をさらにグッと近づけたよ！ */
 .logo-svg {
     width: 100%;
     max-width: 460px; 
     height: auto;
-    margin: 0 auto 12px auto;
+    margin: 0 auto 0px auto;
     display: block;
 }
 
@@ -48,30 +47,43 @@ body {
     animation: rainbowFill 20s infinite linear;
 }
 
+.content-width {
+    width: max-content;
+    max-width: 100%;
+}
+
 .concept {
+    font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
     color: #111111;
     margin: 0 0 16px 0;
     letter-spacing: normal;
     text-align: center;
-    width: 100%;
+    white-space: nowrap;
 }
 
-/* 「H360」の文字間調整✨ */
 .brand-name {
     letter-spacing: -0.04em;
 }
 
 .sub-group {
     width: 100%;
-    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.contact-spacer {
+    visibility: hidden;
+    font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    user-select: none;
+}
+
 .contact {
+    font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
     text-align: center;
@@ -90,13 +102,12 @@ body {
 }
 
 .soon {
+    font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif;
     font-weight: 500;
     font-size: 0.85rem;
     color: #666666;
     letter-spacing: 0.08em;
-    /* absoluteを使って、上にある board の右端にピタッと合わせる！✨ */
-    position: absolute;
-    right: 0;
+    text-align: right;
 }
 </style>
 </head>
@@ -111,13 +122,16 @@ body {
         </g>
     </svg>
     
-    <div class="concept"><span class="brand-name">H360</span> is a little movie / novelty / clothing / board</div>
-    
-    <div class="sub-group">
-        <div class="contact">
-            <a href="mailto:futoosy@gmail.com">contact</a>
+    <div class="content-width">
+        <div class="concept"><span class="brand-name">H360</span> is a little movie / novelty / clothing / board</div>
+        
+        <div class="sub-group">
+            <div class="contact-spacer">...soon</div>
+            <div class="contact">
+                <a href="mailto:futoosy@gmail.com">contact</a>
+            </div>
+            <div class="soon">...soon</div>
         </div>
-        <div class="soon">...soon</div>
     </div>
 </div>
 </body>
